@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
 * {
 	padding: 0;
 	margin: 0;
@@ -206,13 +207,14 @@ p1 {
 #inicio .inicio {
 	max-width: 2200px;
 	margin: 0 auto;
-	padding: 0 250px;
+	padding: 0 50px;
 	justify-content: flex-start;
 }
 #inicio h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
+	font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
 	position: relative;
 	color: rgb(252, 115, 2);
 	text-align: center;
@@ -259,11 +261,9 @@ p1 {
 
 
 
-
-
 #Ubicacion .Ubicacion {
 	flex-direction: column;
-	max-width: 3200px;
+	max-width: 100%;
 	margin: 0 auto;
 
 }
@@ -336,7 +336,7 @@ p1 {
 	color: white;
 	height: 35px;
 	width: 120px;
-	margin-left: 375px;
+	margin-left: 50%;
 
    }
    .boton:hover{
@@ -442,6 +442,10 @@ body * { visibility: hidden;}
 
 @media only screen and (min-width: 768px) {
 
+	#inicio .inicio {
+		text-align: center;
+	}
+
 	#inicio h1 {
 		font-size: 7rem;
 	}
@@ -497,5 +501,38 @@ body * { visibility: hidden;}
 		width: 90%;
 		
 	}
+}
+
+@media only screen and (min-width: 375px) { 
+
+
+	
+.Ubicacion{
+
+	overflow:hidden;
+	padding-bottom:38%;
+    position:relative;
+	height:0;
+
+}
+ 
+.Ubicacion iframe{
+
+
+    left:0;
+	margin-top: 20%;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#registro .registro-items {
+	width: 100%;
+	margin-right: 100px;
+}
+
+
+	
+
 }
 
